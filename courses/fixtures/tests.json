@@ -1,0 +1,66 @@
+[
+    {
+        "model": "courses.test",
+        "pk": 1,
+        "fields": {
+          "topic": 1,
+          "question_text": "What is a variable?"
+        }
+    },
+    {
+        "model": "courses.test",
+        "pk": 2,
+        "fields": {
+          "topic": 1,
+          "question_text": "Which data type is used to store integers?"
+        }
+    },
+    {
+        "model": "courses.test",
+        "pk": 3,
+        "fields": {
+          "topic": 2,
+          "question_text": "What is a conditional statement?"
+        }
+    },
+    {
+        "model": "courses.test",
+        "pk": 4,
+        "fields": {
+          "topic": 2,
+          "question_text": "How do you write a condition in JavaScript?"
+        }
+    },
+    {
+        "model": "courses.test",
+        "pk": 5,
+        "fields": {
+          "topic": 3,
+          "question_text": "What is HTML?"
+        }
+    },
+    {
+        "model": "courses.test",
+        "pk": 6,
+        "fields": {
+          "topic": 3,
+          "question_text": "Which tags are used for headings in HTML?"
+        }
+    },
+    {
+        "model": "courses.test",
+        "pk": 7,
+        "fields": {
+          "topic": 4,
+          "question_text": "What is JavaScript?"
+        }
+    },
+    {
+        "model": "courses.test",
+        "pk": 8,
+        "fields": {
+          "topic": 4,
+          "question_text": "How do you declare a variable in JavaScript?"
+        }
+    }
+]
