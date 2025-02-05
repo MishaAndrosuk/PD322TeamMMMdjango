@@ -1,0 +1,218 @@
+[
+    {
+        "model": "courses.answeroption",
+        "pk": 1,
+        "fields": {
+          "test": 1,
+          "text": "A variable is a storage location for data.",
+          "is_correct": true
+        }
+    },
+    {
+        "model": "courses.answeroption",
+        "pk": 2,
+        "fields": {
+          "test": 1,
+          "text": "A variable is a function.",
+          "is_correct": false
+        }
+    },
+    {
+        "model": "courses.answeroption",
+        "pk": 3,
+        "fields": {
+          "test": 1,
+          "text": "A variable is an object.",
+          "is_correct": false
+        }
+    },
+    {
+        "model": "courses.answeroption",
+        "pk": 4,
+        "fields": {
+          "test": 2,
+          "text": "An integer is stored in the integer data type.",
+          "is_correct": true
+        }
+    },
+    {
+        "model": "courses.answeroption",
+        "pk": 5,
+        "fields": {
+          "test": 2,
+          "text": "An integer is stored in the float data type.",
+          "is_correct": false
+        }
+    },
+    {
+        "model": "courses.answeroption",
+        "pk": 6,
+        "fields": {
+          "test": 2,
+          "text": "An integer is stored in the string data type.",
+          "is_correct": false
+        }
+    },
+    {
+        "model": "courses.answeroption",
+        "pk": 7,
+        "fields": {
+          "test": 3,
+          "text": "A conditional statement defines the behavior of a program based on a condition.",
+          "is_correct": true
+        }
+    },
+    {
+        "model": "courses.answeroption",
+        "pk": 8,
+        "fields": {
+          "test": 3,
+          "text": "A conditional statement executes without checking a condition.",
+          "is_correct": false
+        }
+    },
+    {
+        "model": "courses.answeroption",
+        "pk": 9,
+        "fields": {
+          "test": 3,
+          "text": "A conditional statement is a function.",
+          "is_correct": false
+        }
+    },
+    {
+        "model": "courses.answeroption",
+        "pk": 10,
+        "fields": {
+          "test": 4,
+          "text": "A condition in JavaScript is written using 'if' statements.",
+          "is_correct": true
+        }
+    },
+    {
+        "model": "courses.answeroption",
+        "pk": 11,
+        "fields": {
+          "test": 4,
+          "text": "A condition in JavaScript is written using 'while' loops.",
+          "is_correct": false
+        }
+    },
+    {
+        "model": "courses.answeroption",
+        "pk": 12,
+        "fields": {
+          "test": 4,
+          "text": "A condition in JavaScript is written using 'for' loops.",
+          "is_correct": false
+        }
+    },
+    {
+        "model": "courses.answeroption",
+        "pk": 13,
+        "fields": {
+          "test": 5,
+          "text": "HTML is the standard markup language for creating web pages.",
+          "is_correct": true
+        }
+    },
+    {
+        "model": "courses.answeroption",
+        "pk": 14,
+        "fields": {
+          "test": 5,
+          "text": "HTML is a programming language.",
+          "is_correct": false
+        }
+    },
+    {
+        "model": "courses.answeroption",
+        "pk": 15,
+        "fields": {
+          "test": 5,
+          "text": "HTML is used for styling web pages.",
+          "is_correct": false
+        }
+    },
+    {
+        "model": "courses.answeroption",
+        "pk": 16,
+        "fields": {
+          "test": 6,
+          "text": "The <h1> to <h6> tags are used for headings in HTML.",
+          "is_correct": true
+        }
+    },
+    {
+        "model": "courses.answeroption",
+        "pk": 17,
+        "fields": {
+          "test": 6,
+          "text": "The <p> tag is used for headings in HTML.",
+          "is_correct": false
+        }
+    },
+    {
+        "model": "courses.answeroption",
+        "pk": 18,
+        "fields": {
+          "test": 6,
+          "text": "The <div> tag is used for headings in HTML.",
+          "is_correct": false
+        }
+    },
+    {
+        "model": "courses.answeroption",
+        "pk": 19,
+        "fields": {
+          "test": 7,
+          "text": "JavaScript is a programming language used to make web pages interactive.",
+          "is_correct": true
+        }
+    },
+    {
+        "model": "courses.answeroption",
+        "pk": 20,
+        "fields": {
+          "test": 7,
+          "text": "JavaScript is used for styling web pages.",
+          "is_correct": false
+        }
+    },
+    {
+        "model": "courses.answeroption",
+        "pk": 21,
+        "fields": {
+          "test": 7,
+          "text": "JavaScript is used to create databases.",
+          "is_correct": false
+        }
+    },
+    {
+        "model": "courses.answeroption",
+        "pk": 22,
+        "fields": {
+          "test": 8,
+          "text": "A variable in JavaScript is declared using 'let', 'const', or 'var'.",
+          "is_correct": true
+        }
+    },
+    {
+        "model": "courses.answeroption",
+        "pk": 23,
+        "fields": {
+          "test": 8,
+          "text": "A variable in JavaScript is declared using 'function'.",
+          "is_correct": false
+        }
+    },
+    {
+        "model": "courses.answeroption",
+        "pk": 24,
+        "fields": {
+          "test": 8,
+          "text": "A variable in JavaScript is declared using 'class'.",
+          "is_correct": false
+        }
+    }
+]

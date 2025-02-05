@@ -1,0 +1,27 @@
+[
+    {
+      "model": "courses.course",
+      "pk": 1,
+      "fields": {
+        "name": "Introduction to Programming",
+        "description": "A course for beginners covering the basics of programming.",
+        "created_at": "2025-01-01T12:00:00Z",
+        "teacher_name": "Ivan Ivanov",
+        "price": "1200.00",
+        "subject": "Programming"
+      }
+    },
+    {
+      "model": "courses.course",
+      "pk": 2,
+      "fields": {
+        "name": "Introduction to Web Development",
+        "description": "A course for beginners in web development.",
+        "created_at": "2025-01-01T12:00:00Z",
+        "teacher_name": "Maria Petrovna",
+        "price": "1500.00",
+        "subject": "Web Development"
+      }
+    }
+]
+  
