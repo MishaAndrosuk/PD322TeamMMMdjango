@@ -27,7 +27,7 @@ class Test(models.Model):
     question_text = models.TextField()
 
     def __str__(self):
-        return f"Test {self.number} - {self.topic.title}"
+        return f"Test {self.topic.title}"
 
 # Модель Варіант відповіді
 class AnswerOption(models.Model):
