@@ -96,7 +96,7 @@ def update_user(request):
 
     if serializer.is_valid():
         serializer.save()
-        return Response({'message': 'Avatar successfully updated'}, status=status.HTTP_200_OK)
+        return Response({'message': 'User data successfully updated'}, status=status.HTTP_200_OK)
 
     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
