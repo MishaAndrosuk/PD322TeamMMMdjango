@@ -79,10 +79,18 @@ WSGI_APPLICATION = 'pd322TeamProjectDjango.wsgi.application'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    "default": {
+        "ENGINE": "mssql",
+        "NAME": "TeamProjectMMM",
+        "USER": "maksikd62_SQLLogin_1",
+        "PASSWORD": "auo75fizyq",
+        "HOST": "TeamProjectMMM.mssql.somee.com",
+        'PORT': '',
+        'OPTIONS': {
+            'driver': 'ODBC Driver 17 for SQL Server',
+            'trusted_connection': 'yes',
+        }
+    },
 }
 
 
