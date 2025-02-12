@@ -8,10 +8,10 @@ class CreateCourse(forms.ModelForm):
         fields = "__all__"
 
     def clean_name(self):
-        name = self.cleaned_data.get("name")
-        if not all(x.isalpha() or x.isspace() for x in name):
-            raise forms.ValidationError("Name of course must contain only letters.")
-        return name
+        teacher_name = self.cleaned_data.get("teacher_name")
+        if not all(x.isalpha() or x.isspace() for x in teacher_name):
+            raise forms.ValidationError("Name of teacher must contain only letters.")
+        return teacher_name
 
     def clean_price(self):
         price = self.cleaned_data.get("price")
