@@ -9,7 +9,6 @@ urlpatterns = [
     path('create/topic/<int:id>', views.create_topic, name='create_topic'),
     path('create/test/<int:id>', views.create_test, name='create_test'),
     path('create/answer/<int:id>', views.create_answer_option, name='create_answer'),
-    path('create/test/answer/<int:id>', views.create_test_with_answers, name='create_test_with_answers'),
     path('edit/course/<int:id>', views.edit_course, name='edit_course'),
     path('edit/topic/<int:id>', views.edit_topic, name='edit_topic'),
     path('edit/test/<int:id>', views.edit_test, name='edit_test'),
