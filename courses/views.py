@@ -46,7 +46,7 @@ def create_course(request):
     serializer = CreateCourseSerializer(data=request.data)
     if serializer.is_valid():
         course = serializer.save()
-        return Response({'message': 'Course created successfully!', 'course_id': course.id})
+        return Response({'message': 'Course created successfully!', 'courseId': course.id})
     return Response({'errors': serializer.errors}, status=400)
 
 
