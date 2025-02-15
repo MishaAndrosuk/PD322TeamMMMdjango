@@ -11,9 +11,9 @@ from rest_framework.permissions import AllowAny
 
 @api_view(['GET'])
 @permission_classes([AllowAny]) 
-def get_course(request, course_id):
+def get_course(request, courseId):
     try:
-        course = Course.objects.get(id=course_id)
+        course = Course.objects.get(id=courseId)
     except Course.DoesNotExist:
         return Response({'error': 'Course not found'}, status=404)
     
@@ -23,9 +23,9 @@ def get_course(request, course_id):
 
 @api_view(['GET'])
 @permission_classes([AllowAny]) 
-def get_topic(request, topic_id):
+def get_topic(request, topicId):
     try:
-        topic = Topic.objects.get(id=topic_id)
+        topic = Topic.objects.get(id=topicId)
     except Topic.DoesNotExist:
         return Response({'error': 'Topic not found'}, status=404)
     
@@ -51,9 +51,9 @@ def create_course(request):
 
 
 @api_view(['PUT'])
-def edit_course(request, course_id):
+def edit_course(request, courseId):
     try:
-        course = Course.objects.get(id=course_id)
+        course = Course.objects.get(id=courseId)
     except Course.DoesNotExist:
         return Response({'error': 'Course not found'}, status=404)
     
@@ -65,9 +65,9 @@ def edit_course(request, course_id):
 
 
 @api_view(['DELETE'])
-def delete_course(request, course_id):
+def delete_course(request, courseId):
     try:
-        course = Course.objects.get(id=course_id)
+        course = Course.objects.get(id=courseId)
     except Course.DoesNotExist:
         return Response({'error': 'Course not found'}, status=404)
     
@@ -77,9 +77,9 @@ def delete_course(request, course_id):
 
 
 @api_view(['POST'])
-def create_topic(request, course_id):
+def create_topic(request, courseId):
     try:
-        course = Course.objects.get(id=course_id)
+        course = Course.objects.get(id=courseId)
     except Course.DoesNotExist:
         return Response({'error': 'Course not found'}, status=404)
     
@@ -91,9 +91,9 @@ def create_topic(request, course_id):
 
 
 @api_view(['PUT'])
-def edit_topic(request, topic_id):
+def edit_topic(request, topicId):
     try:
-        topic = Topic.objects.get(id=topic_id)
+        topic = Topic.objects.get(id=topicId)
     except Topic.DoesNotExist:
         return Response({'error': 'Topic not found'}, status=404)
     
@@ -105,9 +105,9 @@ def edit_topic(request, topic_id):
 
 
 @api_view(['DELETE'])
-def delete_topic(request, topic_id):
+def delete_topic(request, topicId):
     try:
-        topic = Topic.objects.get(id=topic_id)
+        topic = Topic.objects.get(id=topicId)
     except Topic.DoesNotExist:
         return Response({'error': 'Topic not found'}, status=404)
     
@@ -117,9 +117,9 @@ def delete_topic(request, topic_id):
 
 
 @api_view(['POST'])
-def create_test(request, topic_id):
+def create_test(request, topicId):
     try:
-        topic = Topic.objects.get(id=topic_id)
+        topic = Topic.objects.get(id=topicId)
     except Topic.DoesNotExist:
         return Response({'error': 'Topic not found'}, status=404)
     
@@ -131,9 +131,9 @@ def create_test(request, topic_id):
 
 
 @api_view(['GET'])
-def get_test(request, test_id):
+def get_test(request, testId):
     try:
-        test = Test.objects.get(id=test_id)
+        test = Test.objects.get(id=testId)
     except Test.DoesNotExist:
         return Response({'error': 'Test not found'}, status=404)
     
@@ -142,9 +142,9 @@ def get_test(request, test_id):
 
 
 @api_view(['PUT'])
-def edit_test(request, test_id):
+def edit_test(request, testId):
     try:
-        test = Test.objects.get(id=test_id)
+        test = Test.objects.get(id=testId)
     except Test.DoesNotExist:
         return Response({'error': 'Test not found'}, status=404)
     
@@ -156,9 +156,9 @@ def edit_test(request, test_id):
 
 
 @api_view(['DELETE'])
-def delete_test(request, test_id):
+def delete_test(request, testId):
     try:
-        test = Test.objects.get(id=test_id)
+        test = Test.objects.get(id=testId)
     except Test.DoesNotExist:
         return Response({'error': 'Test not found'}, status=404)
     
@@ -168,9 +168,9 @@ def delete_test(request, test_id):
 
 
 @api_view(['POST'])
-def create_answer_option(request, test_id):
+def create_answer_option(request, testId):
     try:
-        test = Test.objects.get(id=test_id)
+        test = Test.objects.get(id=testId)
     except Test.DoesNotExist:
         return Response({'error': 'Test not found'}, status=404)
     
@@ -182,9 +182,9 @@ def create_answer_option(request, test_id):
 
 
 @api_view(['GET'])
-def get_answer_option(request, answer_option_id):
+def get_answer_option(request, answerId):
     try:
-        answer_option = AnswerOption.objects.get(id=answer_option_id)
+        answer_option = AnswerOption.objects.get(id=answerId)
     except AnswerOption.DoesNotExist:
         return Response({'error': 'Answer option not found'}, status=404)
     
@@ -193,9 +193,9 @@ def get_answer_option(request, answer_option_id):
 
 
 @api_view(['PUT'])
-def edit_answer_option(request, answer_option_id):
+def edit_answer_option(request, answerId):
     try:
-        answer_option = AnswerOption.objects.get(id=answer_option_id)
+        answer_option = AnswerOption.objects.get(id=answerId)
     except AnswerOption.DoesNotExist:
         return Response({'error': 'Answer option not found'}, status=404)
     
@@ -207,9 +207,9 @@ def edit_answer_option(request, answer_option_id):
 
 
 @api_view(['DELETE'])
-def delete_answer_option(request, answer_option_id):
+def delete_answer_option(request, answerId):
     try:
-        answer_option = AnswerOption.objects.get(id=answer_option_id)
+        answer_option = AnswerOption.objects.get(id=answerId)
     except AnswerOption.DoesNotExist:
         return Response({'error': 'Answer option not found'}, status=404)
     
