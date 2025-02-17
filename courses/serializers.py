@@ -17,10 +17,11 @@ class TestSerializer(serializers.ModelSerializer):
 
 class TopicSerializer(serializers.ModelSerializer):
     tests = TestSerializer(many=True)
+    courseId = serializers.IntegerField(source='course.id', read_only=True)
 
     class Meta:
         model = Topic
-        fields = ['id', 'title', 'description', 'tests']
+        fields = ['id', 'title', 'description', 'courseId', 'tests']
 
 
 class CourseSerializer(serializers.ModelSerializer):
@@ -28,7 +29,7 @@ class CourseSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Course
-        fields = ['id', 'name', 'description', 'created_at', 'teacher_name', 'price', 'subject', 'topics']
+        fields = ['id', 'name', 'description', 'teacher_name', 'price', 'subject', 'topics']
 
 
 class CreateCourseSerializer(serializers.ModelSerializer):
@@ -48,15 +49,15 @@ class CreateTopicSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Topic
-        fields = ['course_id', 'title', 'description']
+        fields = ['courseId', 'title', 'description']
 
 
 class EditTopicSerializer(serializers.ModelSerializer):
-    course_id = serializers.PrimaryKeyRelatedField(queryset=Course.objects.all(), source='course', required=False)
+    courseId = serializers.PrimaryKeyRelatedField(queryset=Course.objects.all(), source='course', required=False)
 
     class Meta:
         model = Topic
-        fields = ['course_id', 'title', 'description']
+        fields = ['courseId', 'title', 'description']
 
 
 class CreateTestSerializer(serializers.ModelSerializer):
@@ -64,7 +65,7 @@ class CreateTestSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Test
-        fields = ['topic_id', 'question_text']
+        fields = ['topicId', 'question_text']
 
 
 class EditTestSerializer(serializers.ModelSerializer):
@@ -72,7 +73,7 @@ class EditTestSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Test
-        fields = ['topic_id', 'question_text']
+        fields = ['topicId', 'question_text']
 
 
 class CreateAnswerOptionSerializer(serializers.ModelSerializer):
@@ -80,7 +81,7 @@ class CreateAnswerOptionSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = AnswerOption
-        fields = ['test_id', 'text', 'is_correct']
+        fields = ['testId', 'text', 'is_correct']
 
 
 class EditAnswerOptionSerializer(serializers.ModelSerializer):
@@ -88,4 +89,4 @@ class EditAnswerOptionSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = AnswerOption
-        fields = ['test_id', 'text', 'is_correct']
+        fields = ['testId', 'text', 'is_correct']
