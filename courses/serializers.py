@@ -45,7 +45,7 @@ class EditCourseSerializer(serializers.ModelSerializer):
 
 
 class CreateTopicSerializer(serializers.ModelSerializer):
-    course_id = serializers.PrimaryKeyRelatedField(queryset=Course.objects.all(), source='course')
+    courseId = serializers.PrimaryKeyRelatedField(queryset=Course.objects.all(), source='course')
 
     class Meta:
         model = Topic
@@ -61,7 +61,7 @@ class EditTopicSerializer(serializers.ModelSerializer):
 
 
 class CreateTestSerializer(serializers.ModelSerializer):
-    topic_id = serializers.PrimaryKeyRelatedField(queryset=Topic.objects.all(), source='topic')
+    topicId = serializers.PrimaryKeyRelatedField(queryset=Topic.objects.all(), source='topic')
 
     class Meta:
         model = Test
@@ -69,7 +69,7 @@ class CreateTestSerializer(serializers.ModelSerializer):
 
 
 class EditTestSerializer(serializers.ModelSerializer):
-    topic_id = serializers.PrimaryKeyRelatedField(queryset=Topic.objects.all(), source='topic', required=False)
+    topicId = serializers.PrimaryKeyRelatedField(queryset=Topic.objects.all(), source='topic', required=False)
 
     class Meta:
         model = Test
@@ -77,7 +77,7 @@ class EditTestSerializer(serializers.ModelSerializer):
 
 
 class CreateAnswerOptionSerializer(serializers.ModelSerializer):
-    test_id = serializers.PrimaryKeyRelatedField(queryset=Test.objects.all(), source='test')
+    testId = serializers.PrimaryKeyRelatedField(queryset=Test.objects.all(), source='test')
 
     class Meta:
         model = AnswerOption
@@ -85,7 +85,7 @@ class CreateAnswerOptionSerializer(serializers.ModelSerializer):
 
 
 class EditAnswerOptionSerializer(serializers.ModelSerializer):
-    test_id = serializers.PrimaryKeyRelatedField(queryset=Test.objects.all(), source='test', required=False)
+    testId = serializers.PrimaryKeyRelatedField(queryset=Test.objects.all(), source='test', required=False)
 
     class Meta:
         model = AnswerOption
