@@ -38,7 +38,7 @@ def get_topic(request, topicId):
 def list_courses(request):
     courses = Course.objects.all()
     courses_serializer = CourseSerializer(courses, many=True)
-    return Response({'courses': courses_serializer.data})
+    return Response(courses_serializer.data)
 
 
 @api_view(['POST'])
@@ -126,7 +126,7 @@ def create_test(request, topicId):
     serializer = CreateTestSerializer(data=request.data)
     if serializer.is_valid():
         test = serializer.save(topic=topic)
-        return Response({'message': 'Test created successfully!', 'test_id': test.id})
+        return Response({'message': 'Test created successfully!', 'testId': test.id})
     return Response({'errors': serializer.errors}, status=400)
 
 

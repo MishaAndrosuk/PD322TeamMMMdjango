@@ -9,10 +9,12 @@ class AnswerOptionSerializer(serializers.ModelSerializer):
 
 class TestSerializer(serializers.ModelSerializer):
     answer_options = AnswerOptionSerializer(many=True)
+    topicId = serializers.IntegerField(source='topic.id', read_only=True)
+    courseId = serializers.IntegerField(source='topic.course.id', read_only=True)
 
     class Meta:
         model = Test
-        fields = ['id', 'question_text', 'answer_options']
+        fields = ['id', 'question_text', 'answer_options', 'topicId', 'courseId']
 
 
 class TopicSerializer(serializers.ModelSerializer):
