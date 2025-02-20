@@ -5,6 +5,7 @@ urlpatterns = [
     path('courses/', views.list_courses, name='courses'),
     path('course/<int:courseId>/topics/', views.get_course, name='topics'),
     path('topic/<int:topicId>/tests', views.get_topic, name='tests'),
+    path('test/<int:testId>/answers', views.get_test, name='answers'),
     path('create/course/', views.create_course, name='create_course'),
     path('create/topic/<int:courseId>', views.create_topic, name='create_topic'),
     path('create/test/<int:topicId>', views.create_test, name='create_test'),
