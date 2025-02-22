@@ -22,6 +22,42 @@
         "price": "1500.00",
         "subject": "Web Development"
       }
+    },
+    {
+      "model": "courses.course",
+      "pk": 3,
+      "fields": {
+        "name": "Introduction to Python",
+        "description": "A course for beginners in Python programming.",
+        "created_at": "2025-01-01T12:00:00Z",
+        "teacher_name": "Georgi Georgiev",
+        "price": "1000.00",
+        "subject": "Python"
+      }
+    },
+    {
+      "model": "courses.course",
+      "pk": 4,
+      "fields": {
+        "name": "Introduction to Django",
+        "description": "A course for beginners in Django web development.",
+        "created_at": "2025-01-01T12:00:00Z",
+        "teacher_name": "Ivan Ivanov",
+        "price": "1300.00",
+        "subject": "Django"
+      }
+    },
+    {
+      "model": "courses.course",
+      "pk": 5,
+      "fields": {
+        "name": "Introduction to JavaScript",
+        "description": "A course for beginners in JavaScript programming.",
+        "created_at": "2025-01-01T12:00:00Z",
+        "teacher_name": "Maria Petrovna",
+        "price": "1400.00",
+        "subject": "JavaScript"
+      }
     }
 ]
   
