@@ -13,7 +13,7 @@ class UserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = CustomUser
-        fields = ['id', 'email', 'first_name', 'last_name', 'avatar']
+        fields = ['id', 'email', 'first_name', 'last_name', 'avatar', 'role']
     
     def to_representation(self, instance):
         representation = super().to_representation(instance)
@@ -26,10 +26,17 @@ class UserSerializer(serializers.ModelSerializer):
 
 class RegisterSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True, min_length=6)
+    role = serializers.CharField(required=False, default="student")
 
     class Meta:
         model = CustomUser
-        fields = ['email', 'password', 'first_name', 'last_name']
+        fields = ['email', 'password', 'first_name', 'last_name', 'role']
+
+    def validate_role(self, value):
+        value = value.lower()
+        if value not in CustomUser.ROLES:
+            raise serializers.ValidationError("Invalid role")
+        return value
 
     def create(self, validated_data):
         email = validated_data.get('email')
@@ -37,6 +44,8 @@ class RegisterSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError({"email": "Email already exists."})
 
         password = validated_data.pop('password')
+        role_input = validated_data.pop("role", "student")
+        validated_data["role"] = CustomUser.ROLES.get(role_input, "Student")
         user = CustomUser(**validated_data)
         user.set_password(password)
         user.save()
