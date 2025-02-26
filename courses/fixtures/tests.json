@@ -1,66 +1,146 @@
 [
-    {
-        "model": "courses.test",
-        "pk": 1,
-        "fields": {
-          "topic": 1,
-          "question_text": "What is a variable?"
-        }
-    },
-    {
-        "model": "courses.test",
-        "pk": 2,
-        "fields": {
-          "topic": 1,
-          "question_text": "Which data type is used to store integers?"
-        }
-    },
-    {
-        "model": "courses.test",
-        "pk": 3,
-        "fields": {
-          "topic": 2,
-          "question_text": "What is a conditional statement?"
-        }
-    },
-    {
-        "model": "courses.test",
-        "pk": 4,
-        "fields": {
-          "topic": 2,
-          "question_text": "How do you write a condition in JavaScript?"
-        }
-    },
-    {
-        "model": "courses.test",
-        "pk": 5,
-        "fields": {
-          "topic": 3,
-          "question_text": "What is HTML?"
-        }
-    },
-    {
-        "model": "courses.test",
-        "pk": 6,
-        "fields": {
-          "topic": 3,
-          "question_text": "Which tags are used for headings in HTML?"
-        }
-    },
-    {
-        "model": "courses.test",
-        "pk": 7,
-        "fields": {
-          "topic": 4,
-          "question_text": "What is JavaScript?"
-        }
-    },
-    {
-        "model": "courses.test",
-        "pk": 8,
-        "fields": {
-          "topic": 4,
-          "question_text": "How do you declare a variable in JavaScript?"
-        }
+  {
+    "model": "courses.test",
+    "pk": 1,
+    "fields": {
+        "topic": 1,
+        "question_text": "What is a variable?"
     }
+  },
+  {
+    "model": "courses.test",
+    "pk": 2,
+    "fields": {
+        "topic": 1,
+        "question_text": "Which of the following is a data type in Python?"
+    }
+  },
+  {
+    "model": "courses.test",
+    "pk": 3,
+    "fields": {
+        "topic": 2,
+        "question_text": "What keyword is used for a loop in Python?"
+    }
+  },
+  {
+    "model": "courses.test",
+    "pk": 4,
+    "fields": {
+        "topic": 2,
+        "question_text": "Which control structure is used for decision making?"
+    }
+  },
+  {
+    "model": "courses.test",
+    "pk": 5,
+    "fields": {
+        "topic": 3,
+        "question_text": "How do you define a function in Python?"
+    }
+  },
+  {
+    "model": "courses.test",
+    "pk": 6,
+    "fields": {
+        "topic": 3,
+        "question_text": "What is the purpose of a module in Python?"
+    }
+  },
+  {
+    "model": "courses.test",
+    "pk": 7,
+    "fields": {
+      "topic": 4,
+      "question_text": "What does HTML stand for?"
+    }
+  },
+  {
+    "model": "courses.test",
+    "pk": 8,
+    "fields": {
+      "topic": 4,
+      "question_text": "Which tag is used to create a hyperlink?"
+    }
+  },
+  {
+    "model": "courses.test",
+    "pk": 9,
+    "fields": {
+      "topic": 5,
+      "question_text": "What does CSS stand for?"
+    }
+  },
+  {
+    "model": "courses.test",
+    "pk": 10,
+    "fields": {
+      "topic": 5,
+      "question_text": "Which property is used to change text color in CSS?"
+    }
+  },
+  {
+    "model": "courses.test",
+    "pk": 11,
+    "fields": {
+      "topic": 6,
+      "question_text": "Which keyword is used to declare a variable in JavaScript?"
+    }
+  },
+  {
+    "model": "courses.test",
+    "pk": 12,
+    "fields": {
+      "topic": 6,
+      "question_text": "What function is used to display a message in JavaScript?"
+    }
+  },
+  {
+    "model": "courses.test",
+    "pk": 13,
+    "fields": {
+      "topic": 7,
+      "question_text": "What symbol is used to comment a line in Python?"
+    }
+  },
+  {
+    "model": "courses.test",
+    "pk": 14,
+    "fields": {
+      "topic": 7,
+      "question_text": "How do you print a message in Python?"
+    }
+  },
+  {
+    "model": "courses.test",
+    "pk": 15,
+    "fields": {
+      "topic": 8,
+      "question_text": "Which data structure allows storing key-value pairs in Python?"
+    }
+  },
+  {
+    "model": "courses.test",
+    "pk": 16,
+    "fields": {
+      "topic": 8,
+      "question_text": "Which data structure in Python is immutable?"
+    }
+  },
+  {
+    "model": "courses.test",
+    "pk": 17,
+    "fields": {
+      "topic": 9,
+      "question_text": "What keyword is used to define a class in Python?"
+    }
+  },
+  {
+    "model": "courses.test",
+    "pk": 18,
+    "fields": {
+      "topic": 9,
+      "question_text": "What is an instance of a class called?"
+    }
+  }
 ]

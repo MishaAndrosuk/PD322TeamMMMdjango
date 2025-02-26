@@ -5,7 +5,7 @@
       "fields": {
         "name": "Introduction to Programming",
         "description": "A course for beginners covering the basics of programming.",
-        "created_at": "2025-01-01T12:00:00Z",
+        "created_at": "2023-11-01T12:00:00Z",
         "teacher_name": "Ivan Ivanov",
         "price": "1200.00",
         "subject": "Programming"
@@ -17,7 +17,7 @@
       "fields": {
         "name": "Introduction to Web Development",
         "description": "A course for beginners in web development.",
-        "created_at": "2025-01-01T12:00:00Z",
+        "created_at": "2022-10-01T12:00:00Z",
         "teacher_name": "Maria Petrovna",
         "price": "1500.00",
         "subject": "Web Development"
@@ -29,7 +29,7 @@
       "fields": {
         "name": "Introduction to Python",
         "description": "A course for beginners in Python programming.",
-        "created_at": "2025-01-01T12:00:00Z",
+        "created_at": "2024-12-04T12:00:00Z",
         "teacher_name": "Georgi Georgiev",
         "price": "1000.00",
         "subject": "Python"
@@ -41,7 +41,7 @@
       "fields": {
         "name": "Introduction to Django",
         "description": "A course for beginners in Django web development.",
-        "created_at": "2025-01-01T12:00:00Z",
+        "created_at": "2025-01-10T12:00:00Z",
         "teacher_name": "Ivan Ivanov",
         "price": "1300.00",
         "subject": "Django"
@@ -53,10 +53,22 @@
       "fields": {
         "name": "Introduction to JavaScript",
         "description": "A course for beginners in JavaScript programming.",
-        "created_at": "2025-01-01T12:00:00Z",
+        "created_at": "2024-02-01T12:00:00Z",
         "teacher_name": "Maria Petrovna",
         "price": "1400.00",
         "subject": "JavaScript"
+      }
+    },
+    {
+      "model": "courses.course",
+      "pk": 6,
+      "fields": {
+        "name": "Introduction to React",
+        "description": "A course for beginners in React web development.",
+        "created_at": "2025-02-01T12:00:00Z",
+        "teacher_name": "Georgi Georgiev",
+        "price": "1600.00",
+        "subject": "React"
       }
     }
 ]

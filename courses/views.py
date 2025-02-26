@@ -86,7 +86,7 @@ def create_topic(request, courseId):
     serializer = CreateTopicSerializer(data=request.data)
     if serializer.is_valid():
         topic = serializer.save(course=course)
-        return Response({'message': 'Topic created successfully!', 'topic_id': topic.id})
+        return Response({'message': 'Topic created successfully!', 'topicId': topic.id})
     return Response({'errors': serializer.errors}, status=400)
 
 
@@ -177,7 +177,7 @@ def create_answer_option(request, testId):
     serializer = CreateAnswerOptionSerializer(data=request.data)
     if serializer.is_valid():
         answer_option = serializer.save(test=test)
-        return Response({'message': 'Answer option created successfully!', 'answer_option_id': answer_option.id})
+        return Response({'message': 'Answer option created successfully!', 'answerId': answer_option.id})
     return Response({'errors': serializer.errors}, status=400)
 
 
