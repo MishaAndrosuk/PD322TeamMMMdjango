@@ -1,0 +1,272 @@
+[
+  {
+    "model": "courses.answeroption",
+    "pk": 1,
+    "fields": {
+      "test": 1,
+      "text": "A variable is a storage location for data.",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "courses.answeroption",
+    "pk": 2,
+    "fields": {
+      "test": 1,
+      "text": "A variable is a function in Python.",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "courses.answeroption",
+    "pk": 3,
+    "fields": {
+      "test": 1,
+      "text": "A variable is a type of loop in Python.",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "courses.answeroption",
+    "pk": 4,
+    "fields": {
+      "test": 2,
+      "text": "Integer",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "courses.answeroption",
+    "pk": 5,
+    "fields": {
+      "test": 2,
+      "text": "Function",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "courses.answeroption",
+    "pk": 6,
+    "fields": {
+      "test": 2,
+      "text": "String",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "courses.answeroption",
+    "pk": 7,
+    "fields": {
+      "test": 3,
+      "text": "for",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "courses.answeroption",
+    "pk": 8,
+    "fields": {
+      "test": 3,
+      "text": "while",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "courses.answeroption",
+    "pk": 9,
+    "fields": {
+      "test": 3,
+      "text": "define",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "courses.answeroption",
+    "pk": 10,
+    "fields": {
+      "test": 4,
+      "text": "if-else",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "courses.answeroption",
+    "pk": 11,
+    "fields": {
+      "test": 4,
+      "text": "for loop",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "courses.answeroption",
+    "pk": 12,
+    "fields": {
+      "test": 4,
+      "text": "switch-case",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "courses.answeroption",
+    "pk": 13,
+    "fields": {
+      "test": 5,
+      "text": "Using 'def' keyword",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "courses.answeroption",
+    "pk": 14,
+    "fields": {
+      "test": 5,
+      "text": "Using 'function' keyword",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "courses.answeroption",
+    "pk": 15,
+    "fields": {
+      "test": 6,
+      "text": "To reuse code",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "courses.answeroption",
+    "pk": 16,
+    "fields": {
+      "test": 6,
+      "text": "To create a new programming language",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "courses.answeroption",
+    "pk": 17,
+    "fields": {
+      "test": 7,
+      "text": "Hyper Text Markup Language",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "courses.answeroption",
+    "pk": 18,
+    "fields": {
+      "test": 7,
+      "text": "Home Tool Markup Language",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "courses.answeroption",
+    "pk": 19,
+    "fields": {
+      "test": 8,
+      "text": "<a>",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "courses.answeroption",
+    "pk": 20,
+    "fields": {
+      "test": 8,
+      "text": "<link>",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "courses.answeroption",
+    "pk": 21,
+    "fields": {
+      "test": 9,
+      "text": "Cascading Style Sheets",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "courses.answeroption",
+    "pk": 22,
+    "fields": {
+      "test": 9,
+      "text": "Computer Styled Syntax",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "courses.answeroption",
+    "pk": 23,
+    "fields": {
+      "test": 10,
+      "text": "color",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "courses.answeroption",
+    "pk": 24,
+    "fields": {
+      "test": 10,
+      "text": "font-style",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "courses.answeroption",
+    "pk": 25,
+    "fields": {
+      "test": 11,
+      "text": "var",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "courses.answeroption",
+    "pk": 26,
+    "fields": {
+      "test": 11,
+      "text": "variable",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "courses.answeroption",
+    "pk": 27,
+    "fields": {
+      "test": 12,
+      "text": "alert()",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "courses.answeroption",
+    "pk": 28,
+    "fields": {
+      "test": 12,
+      "text": "print()",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "courses.answeroption",
+    "pk": 29,
+    "fields": {
+      "test": 13,
+      "text": "#",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "courses.answeroption",
+    "pk": 30,
+    "fields": {
+      "test": 13,
+      "text": "//",
+      "is_correct": false
+    }
+  }
+]

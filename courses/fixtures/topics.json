@@ -1,0 +1,137 @@
+[
+  {
+      "model": "courses.topic",
+      "pk": 1,
+      "fields": {
+          "course": 1,
+          "title": "Variables and Data Types",
+          "description": "Learn about variables and basic data types in programming."
+      }
+  },
+  {
+      "model": "courses.topic",
+      "pk": 2,
+      "fields": {
+          "course": 1,
+          "title": "Control Structures",
+          "description": "Understand loops and conditional statements."
+      }
+  },
+  {
+      "model": "courses.topic",
+      "pk": 3,
+      "fields": {
+          "course": 1,
+          "title": "Functions and Modules",
+          "description": "Learn how to write reusable code using functions and modules."
+      }
+  },
+  {
+      "model": "courses.topic",
+      "pk": 4,
+      "fields": {
+          "course": 2,
+          "title": "HTML Basics",
+          "description": "Introduction to HTML structure and elements."
+      }
+  },
+  {
+      "model": "courses.topic",
+      "pk": 5,
+      "fields": {
+          "course": 2,
+          "title": "CSS Styling",
+          "description": "Learn how to style web pages using CSS."
+      }
+  },
+  {
+      "model": "courses.topic",
+      "pk": 6,
+      "fields": {
+          "course": 2,
+          "title": "JavaScript Basics",
+          "description": "Understand how JavaScript makes websites dynamic."
+      }
+  },
+  {
+      "model": "courses.topic",
+      "pk": 7,
+      "fields": {
+          "course": 3,
+          "title": "Python Syntax",
+          "description": "Learn the basic syntax and structure of Python programs."
+      }
+  },
+  {
+      "model": "courses.topic",
+      "pk": 8,
+      "fields": {
+          "course": 3,
+          "title": "Data Structures in Python",
+          "description": "Explore lists, tuples, dictionaries, and sets in Python."
+      }
+  },
+  {
+      "model": "courses.topic",
+      "pk": 9,
+      "fields": {
+          "course": 3,
+          "title": "Object-Oriented Programming",
+          "description": "Understand classes and objects in Python."
+      }
+  },
+  {
+      "model": "courses.topic",
+      "pk": 10,
+      "fields": {
+          "course": 4,
+          "title": "Django Framework Basics",
+          "description": "Introduction to Django and its core concepts."
+      }
+  },
+  {
+      "model": "courses.topic",
+      "pk": 11,
+      "fields": {
+          "course": 4,
+          "title": "Django Models and Migrations",
+          "description": "Learn how to create and manage Django models."
+      }
+  },
+  {
+      "model": "courses.topic",
+      "pk": 12,
+      "fields": {
+          "course": 4,
+          "title": "Django Views and Templates",
+          "description": "Understand how to render HTML using Django views and templates."
+      }
+  },
+  {
+      "model": "courses.topic",
+      "pk": 13,
+      "fields": {
+          "course": 5,
+          "title": "JavaScript Fundamentals",
+          "description": "Learn the basics of JavaScript syntax and usage."
+      }
+  },
+  {
+      "model": "courses.topic",
+      "pk": 14,
+      "fields": {
+          "course": 5,
+          "title": "JavaScript Functions and Events",
+          "description": "Understand functions and how to handle events in JavaScript."
+      }
+  },
+  {
+      "model": "courses.topic",
+      "pk": 15,
+      "fields": {
+          "course": 5,
+          "title": "DOM Manipulation",
+          "description": "Learn how to interact with and modify the DOM using JavaScript."
+      }
+  }
+]
