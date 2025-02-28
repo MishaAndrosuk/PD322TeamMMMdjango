@@ -1,5 +1,8 @@
 from django.db import models
 
+from django.db import models
+from users.models import CustomUser
+
 # Модель Курс
 class Course(models.Model):
     name = models.CharField(max_length=200)
@@ -37,3 +40,8 @@ class AnswerOption(models.Model):
 
     def __str__(self):
         return self.text
+
+class PurchasedCourse(models.Model):
+    student = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
+    course_id = models.IntegerField()
+    transaction_hash = models.CharField(max_length=255, unique=True)

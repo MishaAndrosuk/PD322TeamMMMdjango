@@ -1,5 +1,10 @@
 from rest_framework import serializers
-from courses.models import Course, Topic, Test, AnswerOption
+from courses.models import Course, Topic, Test, AnswerOption, PurchasedCourse
+
+class PurchasedCourseSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = PurchasedCourse
+        fields = "__all__"
 
 class AnswerOptionSerializer(serializers.ModelSerializer):
     class Meta:

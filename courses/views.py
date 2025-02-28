@@ -1,13 +1,27 @@
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from courses.models import Course, Topic, Test, AnswerOption
+from courses.models import Course, Topic, Test, AnswerOption, PurchasedCourse
 from courses.serializers import (
     CourseSerializer, TopicSerializer, TestSerializer, AnswerOptionSerializer,
     CreateCourseSerializer, EditCourseSerializer, CreateTopicSerializer, EditTopicSerializer,
-    CreateTestSerializer, EditTestSerializer, CreateAnswerOptionSerializer, EditAnswerOptionSerializer
+    CreateTestSerializer, EditTestSerializer, CreateAnswerOptionSerializer, EditAnswerOptionSerializer, PurchasedCourseSerializer
 )
 from rest_framework.decorators import permission_classes
 from rest_framework.permissions import AllowAny
+
+@api_view(["POST"])
+def buy_course(request):
+    serializer = PurchasedCourseSerializer(data=request.data)
+    if serializer.is_valid():
+        serializer.save()
+        return Response(serializer.data, status=201)
+    return Response(serializer.errors, status=400)
+
+@api_view(["GET"])
+def has_purchased(request, student_id, course_id):
+    exists = PurchasedCourse.objects.filter(student_id=student_id, course_id=course_id).exists()
+    return Response({"purchased": exists})
+
 
 @api_view(['GET'])
 @permission_classes([AllowAny]) 
